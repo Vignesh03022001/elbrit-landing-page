@@ -1,9 +1,11 @@
 import React from "react";
 import Image from "next/image";
+import ProductBenefits from './productBenefits';
+import IngredientsContainer from './ingredientsContainer';
 
 const TopContainer = () => {
   return (
-    <div className="relative bg-blue-100 p-4 sm:p-12 shadow-md">
+    <div className="relative bg-blue-100 p-4 sm:p-12 shadow-md h-screen">
       <div className="sm:mx-12">
         <div className="md:ml-28 tracking-wide">
           <h2 className="text-darkBlue text-3xl sm:text-4xl md:text-6xl lg:text-8xl font-bold md:mt-4 my-1 text-center md:text-left">
@@ -12,7 +14,9 @@ const TopContainer = () => {
         </div>
         <div className="flex flex-col md:flex-row justify-evenly md:px-12 relative">
           <div className="md:basis-64 flex flex-col items-center sm:items-baseline md:justify-end mt-8 sm:mt-0">
-            <p className="text-gray-400 text-lg mb-2">Online Medical Supplies</p>
+            <p className="text-gray-400 text-lg mb-2">
+              Online Medical Supplies
+            </p>
             <h3 className="text-xl font-semibold mb-2 text-darkBlue">
               Get Your Vitamins & Minerals
             </h3>
@@ -89,9 +93,9 @@ const TopContainer = () => {
             </div>
           </div>
         </div>
-
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4"></div>
       </div>
+      <ProductBenefits />
+      <IngredientsContainer />
     </div>
   );
 };
