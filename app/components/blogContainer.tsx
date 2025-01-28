@@ -53,7 +53,7 @@ const calculateHeight = (containerPosition: number) => {
     let swap = height2 +" "+ positionValue;
     height2 = height1;
     height1 = swap;
-    positionValue = "-top-40";
+    positionValue = "sm:-top-40";
     return swap;
   }
   console.log(containerPosition,height1,"height1");
@@ -73,7 +73,7 @@ const BlogContainer = () => {
         <h5 className="text-darkBlue font-semibold">OUR BLOG</h5>
         <h3 className="text-darkBlue font-bold text-2xl">Latest News</h3>
       </div>
-      <div className="grid grid-cols-4 gap-5 mt-8">
+      <div className="grid sm:grid-cols-4 gap-5 mt-8">
         {listOfBlogs.map((item, index) => (
           <div
             key={index}

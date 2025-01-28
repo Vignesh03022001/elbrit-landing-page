@@ -3,8 +3,8 @@ import Image from "next/image";
 const Footer = () => {
   return (
     <footer className="bg-darkBlue h- p-8 flex flex-col gap-6 justify-evenly text-white sm:px-24">
-      <div className="flex gap-16">
-        <div className="flex justify-evenly items-center gap-6 w-72 text-xs bg-blue-950 p-2 rounded-xl">
+      <div className="sm:flex gap-16">
+        <div className="flex justify-evenly items-center gap-6 w-72 text-xs bg-blue-950 p-2 rounded-xl m-2">
           <div className="w-1/4">
             <Image
               src="/assets/telephoneFooter.png"
@@ -19,7 +19,7 @@ const Footer = () => {
             <p className="font-semibold">+91932929128</p>
           </div>
         </div>
-        <div className="flex justify-evenly items-center gap-6 w-72 text-xs bg-blue-950 p-2 rounded-xl">
+        <div className="flex justify-evenly items-center gap-6 w-72 text-xs bg-blue-950 p-2 rounded-xl m-2">
           <div className="w-1/4">
             <Image
               src="/assets/emailFooter.png"
@@ -34,7 +34,7 @@ const Footer = () => {
             <p className="font-semibold">Elbrithcqhr@gmail.com</p>
           </div>
         </div>
-        <div className="flex justify-evenly items-center gap-6 w-72 bg-blue-950 p-2 rounded-xl text-xs">
+        <div className="flex justify-evenly items-center gap-6 w-72 bg-blue-950 p-2 rounded-xl text-xs m-2">
           <div className="w-1/4">
             <Image
               src="/assets/offLocFooter.png"
