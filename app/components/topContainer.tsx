@@ -2,10 +2,13 @@ import React from "react";
 import Image from "next/image";
 import ProductBenefits from './productBenefits';
 import IngredientsContainer from './ingredientsContainer';
+import BlogContainer from './blogContainer';
 
 const TopContainer = () => {
   return (
-    <div className="relative bg-blue-100 p-4 sm:p-12 shadow-md h-screen">
+    <>    
+    <div className="absolute bg-blue-100 w-full h-screen"></div> 
+    <div className="relative p-4 sm:p-12 shadow-md">
       <div className="sm:mx-12">
         <div className="md:ml-28 tracking-wide">
           <h2 className="text-darkBlue text-3xl sm:text-4xl md:text-6xl lg:text-8xl font-bold md:mt-4 my-1 text-center md:text-left">
@@ -96,7 +99,9 @@ const TopContainer = () => {
       </div>
       <ProductBenefits />
       <IngredientsContainer />
+      <BlogContainer />
     </div>
+    </>
   );
 };
 

@@ -31,7 +31,7 @@ const listOfIngredients = [
 
 const IngredientsContainer = () => {
   return (
-    <div className="mx-4 md:mt-16 shadow-md rounded-lg">
+    <div className="mx-4 md:mt-12 shadow-md rounded-lg">
       <div className="flex flex-wrap gap-4 p-4 sm:p-8">
         <div className="md:w-2/5 flex flex-col space-y-3 h-48 justify-end">
           <div className="text-darkBlue text-sm">INGREDIENTS</div>
